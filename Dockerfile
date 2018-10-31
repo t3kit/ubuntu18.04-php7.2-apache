@@ -2,9 +2,9 @@ FROM ubuntu:18.04
 
 MAINTAINER t3kit
 
-ENV DEBIAN_FRONTEND noninteractive
+ENV DEBIAN_FRONTEND=noninteractive
 
-RUN apt-get update && apt-get install -yq \
+RUN apt-get update && apt-get install -yq --no-install-recommends \
     apt-utils \
     curl \
     # Install git
@@ -28,6 +28,7 @@ RUN apt-get update && apt-get install -yq \
     php7.2-intl \
     php-imagick \
     # Install tools
+    openssl \
     nano \
     graphicsmagick \
     imagemagick \
@@ -37,6 +38,7 @@ RUN apt-get update && apt-get install -yq \
     nodejs \
     npm \
     locales \
+    sqlite3 \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Install composer
@@ -45,7 +47,7 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 # Set locales
 RUN locale-gen en_US.UTF-8 en_GB.UTF-8 de_DE.UTF-8 es_ES.UTF-8 fr_FR.UTF-8 it_IT.UTF-8 km_KH sv_SE.UTF-8 fi_FI.UTF-8
 
-RUN a2enmod rewrite expires
+RUN a2enmod rewrite
 
 # Configure PHP
 ADD typo3.php.ini /etc/php/7.2/apache2/conf.d/
