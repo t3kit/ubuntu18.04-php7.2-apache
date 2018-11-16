@@ -35,8 +35,6 @@ RUN apt-get update && apt-get install -yq --no-install-recommends \
     ghostscript \
     mysql-client \
     iputils-ping \
-    nodejs \
-    npm \
     locales \
     sqlite3 \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
@@ -47,7 +45,7 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 # Set locales
 RUN locale-gen en_US.UTF-8 en_GB.UTF-8 de_DE.UTF-8 es_ES.UTF-8 fr_FR.UTF-8 it_IT.UTF-8 km_KH sv_SE.UTF-8 fi_FI.UTF-8
 
-RUN a2enmod rewrite
+RUN a2enmod rewrite expires
 
 # Configure PHP
 ADD typo3.php.ini /etc/php/7.2/apache2/conf.d/
