@@ -1,4 +1,10 @@
 
+#### v1.1.0 `November 20, 2018`
+- **[TASK]** add more VirtualHosts with TYPO3_CONTEXT ([53058b9](https://github.com/t3kit/ubuntu18.04-php7.2-apache/commit/53058b9))
+- **[TASK]** remove nodejs dependency ([38084b6](https://github.com/t3kit/ubuntu18.04-php7.2-apache/commit/38084b6))
+
+***
+
 #### v1.0.0 `November 15, 2018`
 - **[TASK]** adapt docker image for TYPO3 v9 ([219f191](https://github.com/t3kit/ubuntu18.04-php7.2-apache/commit/219f191))
 
