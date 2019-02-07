@@ -2,11 +2,11 @@
 
 ## Docker image for TYPO3 CMS
 
-- Ubuntu18.04
-- php7.2 and
+- Ubuntu 18.04
+- php 7.2
 - apache 2.4
 
-Suitable for TYPO3 v9 and t3kit v9 project
+Suitable for **TYPO3 v9** and **t3kit9** project
   
 ***
 
