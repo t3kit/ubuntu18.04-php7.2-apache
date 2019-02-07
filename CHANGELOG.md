@@ -1,4 +1,11 @@
 
+#### v1.2.0 `February 7, 2019`
+
+- **[DOC]** update documentation ([1bb9142](https://github.com/t3kit/ubuntu18.04-php7.2-apache/commit/1bb9142))
+- **[TASK]** update PHP/apache/vhost config for TYPO3 v9 and t3kit9 ([a25652a](https://github.com/t3kit/ubuntu18.04-php7.2-apache/commit/a25652a))
+
+***
+
 #### v1.1.0 `November 20, 2018`
 - **[TASK]** add more VirtualHosts with TYPO3_CONTEXT ([53058b9](https://github.com/t3kit/ubuntu18.04-php7.2-apache/commit/53058b9))
 - **[TASK]** remove nodejs dependency ([38084b6](https://github.com/t3kit/ubuntu18.04-php7.2-apache/commit/38084b6))
