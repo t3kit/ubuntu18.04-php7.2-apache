@@ -1,4 +1,11 @@
 
+#### v1.2.2 `May 20, 2019`
+
+- **[BUGFIX]** remove unneeded www-data user permission fix ([54179f3](https://github.com/t3kit/ubuntu18.04-php7.2-apache/commit/54179f3))
+- **[TASK]** add docker healthcheck and www-data user permission fix ([fdfa9a0](https://github.com/t3kit/ubuntu18.04-php7.2-apache/commit/fdfa9a0))
+
+***
+
 #### v1.2.0 `February 7, 2019`
 
 - **[DOC]** update documentation ([1bb9142](https://github.com/t3kit/ubuntu18.04-php7.2-apache/commit/1bb9142))
