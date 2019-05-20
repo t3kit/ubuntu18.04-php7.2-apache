@@ -56,16 +56,12 @@ COPY typo3.conf /etc/apache2/sites-available/
 RUN a2dissite 000-default
 RUN a2ensite typo3.conf
 
-
-ADD up.sh /
-RUN chmod ugo+x /up.sh
-
 EXPOSE 80 443
 
 WORKDIR /var/www/html
 
 RUN rm index.html
 
-HEALTHCHECK --interval=5s --timeout=3s --retries=3 CMD curl -f http://localhost:80 || exit 1
+HEALTHCHECK --interval=5s --timeout=3s --retries=3 CMD curl -f http://localhost || exit 1
 
-CMD ["/up.sh"]
+CMD apachectl -D FOREGROUND 
